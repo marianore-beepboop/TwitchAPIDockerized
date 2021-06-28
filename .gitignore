@@ -1,0 +1,5 @@
+comandos.txt
+venv/
+**/logs
+*.log
+**/__pycache__
