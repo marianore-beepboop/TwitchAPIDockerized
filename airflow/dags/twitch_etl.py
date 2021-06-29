@@ -14,8 +14,8 @@ def jprint(obj):
 
 def get_client_credentials(type):
     load_dotenv()
-    client_id = os.getenv['client_id']
-    client_secret = os.getenv['client_secret']
+    client_id = os.getenv['CLIENT_ID']
+    client_secret = os.getenv['CLIENT_SECRET']
 
     if type == "id": return client_id
     elif type == "secret": return client_secret
