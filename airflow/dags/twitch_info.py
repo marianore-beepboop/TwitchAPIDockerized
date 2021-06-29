@@ -3,7 +3,6 @@ import sqlalchemy
 import pandas as pd
 
 
-
 def run_twitch_info():
     DATABASE_LOCATION = "postgresql://postgres:postgres@postgres_data/db_data"
     engine = sqlalchemy.create_engine(DATABASE_LOCATION)

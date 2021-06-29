@@ -3,7 +3,9 @@ import sqlalchemy
 import pandas as pd
 import requests
 import json
-import sqlite3
+import os
+from dotenv import load_dotenv
+# import sqlite3
 
 def jprint(obj):
     # formatted string of the JSON object
@@ -11,8 +13,9 @@ def jprint(obj):
     print(text)
 
 def get_client_credentials(type):
-    client_id = "vxurvxv99f83j2hoi2faohwer1urxt"
-    client_secret = "0261jxwcbbuuf8zyte2fk4oeenprzo"
+    load_dotenv()
+    client_id = os.getenv['client_id']
+    client_secret = os.getenv['client_secret']
 
     if type == "id": return client_id
     elif type == "secret": return client_secret
