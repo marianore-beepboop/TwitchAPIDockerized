@@ -1,6 +1,7 @@
-comandos.txt
 venv/
 **/logs
 *.log
 **/__pycache__
 *.env
+*twitch_info.py
+*twitch_info_dag.py
